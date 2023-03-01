@@ -3,11 +3,16 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import Button from './Button';
+let count = 0;
 const root = ReactDOM.createRoot(document.getElementById('root'));
+function incCount(){
+  count++;
+}
 root.render(
   <React.StrictMode>
     <App />
+    <Button count={count}/>
   </React.StrictMode>
 );
 
